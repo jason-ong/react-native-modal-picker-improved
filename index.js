@@ -170,6 +170,10 @@ export default class ModalPicker extends BaseComponent {
         const HIGHLIGHT_COLOR = 'rgba(0,118,255,0.9)';
         const OPTION_HEIGHT = 38;
         var OPTION_CONTAINER_HEIGHT = 38 * this.props.data.length;
+        
+        if (OPTION_CONTAINER_HEIGHT > height) {
+          OPTION_CONTAINER_HEIGHT = (height/ 2);
+        }
 
         this.style = StyleSheet.create({
             overlayStyle: {
