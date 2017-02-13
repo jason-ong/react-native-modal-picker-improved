@@ -256,7 +256,6 @@ export default class ModalPicker extends BaseComponent {
 
         return (
             <View style={this.props.style}>
-                <StatusBar barStyle="default" backgroundColor="#aaa" />
                 {dp}
                 <TouchableOpacity onPress={this.open}>
                     {this.renderChildren()}
